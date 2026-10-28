@@ -1,0 +1,190 @@
+/* ===== Reset e Base ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f0f2f5;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* ===== Cabeçalho ===== */
+header {
+  background: linear-gradient(135deg, #1a1a2e, #16213e, #0f3460);
+  color: #fff;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 2.8rem;
+  margin-bottom: 8px;
+  letter-spacing: 2px;
+}
+
+.slogan {
+  font-size: 1.15rem;
+  opacity: 0.85;
+  font-style: italic;
+}
+
+/* ===== Seções ===== */
+section {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+section h2 {
+  font-size: 1.8rem;
+  color: #0f3460;
+  margin-bottom: 20px;
+  text-align: center;
+  position: relative;
+}
+
+section h2::after {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 3px;
+  background: #e94560;
+  margin: 10px auto 0;
+  border-radius: 2px;
+}
+
+/* ===== Sobre ===== */
+.about p {
+  max-width: 750px;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 1.05rem;
+  color: #555;
+}
+
+/* ===== Grid de Produtos ===== */
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  margin-top: 10px;
+}
+
+.product-card {
+  background: #fff;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.18);
+}
+
+.product-card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+}
+
+.product-info {
+  padding: 20px;
+}
+
+.product-info h3 {
+  font-size: 1.3rem;
+  color: #1a1a2e;
+  margin-bottom: 8px;
+}
+
+.product-desc {
+  font-size: 0.95rem;
+  color: #666;
+  margin-bottom: 14px;
+}
+
+.product-price {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #e94560;
+}
+
+/* ===== Simulação ===== */
+.simulation-box {
+  max-width: 600px;
+  margin: 0 auto;
+  background: #fff;
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.simulation-box ol {
+  text-align: left;
+  margin: 16px auto;
+  max-width: 450px;
+  font-size: 1rem;
+  color: #555;
+}
+
+.simulation-box ol li {
+  margin-bottom: 8px;
+}
+
+.simulation-box button {
+  margin-top: 20px;
+  padding: 14px 40px;
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: #fff;
+  background: linear-gradient(135deg, #e94560, #c52347);
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.simulation-box button:hover {
+  background: linear-gradient(135deg, #c52347, #a11d3a);
+  transform: scale(1.05);
+}
+
+.simulation-box button:active {
+  transform: scale(0.97);
+}
+
+/* ===== Rodapé ===== */
+footer {
+  background: #1a1a2e;
+  color: #ccc;
+  text-align: center;
+  padding: 20px;
+  font-size: 0.95rem;
+}
+
+footer strong {
+  color: #e94560;
+}
+
+/* ===== Responsivo ===== */
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 2rem;
+  }
+
+  .products-grid {
+    grid-template-columns: 1fr;
+  }
+
+  section {
+    padding: 30px 15px;
+  }
+}
+

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TechStore — Simulador de Compras</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Cabeçalho -->
+  <header>
+    <div class="header-content">
+      <h1>🛒 TechStore</h1>
+      <p class="slogan">Os melhores eletrônicos com os melhores preços!</p>
+    </div>
+  </header>
+
+  <!-- Descrição da loja -->
+  <section class="about">
+    <h2>Sobre a Loja</h2>
+    <p>
+      Bem-vindo à <strong>TechStore</strong>! Somos uma loja especializada em eletrônicos de alta qualidade.
+      Aqui você encontra notebooks, consoles, TVs e muito mais, tudo com preços que cabem no seu bolso.
+      Navegue pelos nossos produtos e simule sua compra!
+    </p>
+  </section>
+
+  <!-- Produtos -->
+  <section class="products">
+    <h2>Nossos Produtos</h2>
+    <div class="products-grid">
+
+      <div class="product-card">
+        <img src="assets/notebook.jpg" alt="Notebook Gamer">
+        <div class="product-info">
+          <h3>Notebook Gamer</h3>
+          <p class="product-desc">Notebook de alta performance para jogos e trabalho. Tela de 15.6", 16 GB RAM, SSD 512 GB.</p>
+          <p class="product-price">R$ 4.500,00</p>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <img src="assets/ps5.jpg" alt="PlayStation 5">
+        <div class="product-info">
+          <h3>PlayStation 5</h3>
+          <p class="product-desc">O console de última geração da Sony. Desempenho incrível, SSD ultrarrápido e jogos exclusivos.</p>
+          <p class="product-price">R$ 3.200,00</p>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <img src="assets/tv.jpg" alt="Smart TV 55 polegadas">
+        <div class="product-info">
+          <h3>Smart TV 55"</h3>
+          <p class="product-desc">TV 4K Ultra HD com HDR, sistema smart integrado, Wi-Fi e controle por voz.</p>
+          <p class="product-price">R$ 2.800,00</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Instruções e botão -->
+  <section class="simulation">
+    <h2>Simular Compra</h2>
+    <div class="simulation-box">
+      <p><strong>Como funciona?</strong></p>
+      <ol>
+        <li>Clique no botão <em>"Simular Compra"</em> abaixo.</li>
+        <li>Informe a quantidade desejada de cada produto (digite <strong>0</strong> se não quiser o produto).</li>
+        <li>Veja o resumo da sua compra com os valores detalhados!</li>
+      </ol>
+      <button onclick="simularCompra()">🛍️ Simular Compra</button>
+    </div>
+  </section>
+
+  <!-- Rodapé -->
+  <footer>
+    <p>&copy; 2026 TechStore — Desenvolvido por <strong>Diogo Brasil da Silva</strong></p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+

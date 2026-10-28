@@ -31,7 +31,6 @@ desafio-trilhas/
 ├── style.css       # Estilos da página
 ├── script.js       # Lógica de simulação de compra
 ├── README.md       # Documentação do projeto
-├── instrucoes.md   # Instruções do desafio
 └── assets/
     ├── notebook.jpg
     ├── ps5.jpg
